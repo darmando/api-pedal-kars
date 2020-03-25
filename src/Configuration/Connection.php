@@ -12,9 +12,9 @@ class Connection{
 		// $this->pass   = "";
 
 		$this->host   = "174.136.30.158";
-		$this->db 	  = "desarr13_bd_mafa";
-		$this->user   = "desarr13_usrmafa";
-		$this->pass   = "~f;Ar*U3lg8Y";		
+		$this->db 	  = "desarr13_bd_pedalkars";
+		$this->user   = "desarr13_usrkars";
+		$this->pass   = "p3d4lk4rS00#";		
 	}
 
 
@@ -28,9 +28,6 @@ class Connection{
 		    return new PDOException("Error  : " .$e->getMessage());
 		  }
 	}
-
-
-
 
 } // fin clase
 

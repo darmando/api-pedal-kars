@@ -32,6 +32,7 @@ $app->post('/usuario', function (Request $request, Response $response, array $ar
     $Usuario->setUsuario($params['usuario']);
     $Usuario->setContrasena(sha1(123456));
     $Usuario->setStatus($params['status']);
+    $Usuario->setTipo($params['tipo']);
     $Usuario->setFechaAlta(date('Y-m-d H:i:s'));
     $ModelUsuario = new ModelUsuario($db);
     $saveUser     = $ModelUsuario->saveUser($Usuario);
